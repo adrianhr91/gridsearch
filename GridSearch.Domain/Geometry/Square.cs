@@ -30,7 +30,7 @@ namespace GridSearch.Domain.Geometry
             }
         }
 
-        public Point BottomLeft
+        public Point BottomRight
         {
             get
             {
@@ -46,12 +46,12 @@ namespace GridSearch.Domain.Geometry
             bool inX = false;
             bool inY = false;
 
-            if (point.X >= TopLeft.X && point.X <= BottomLeft.X)
+            if (point.X >= TopLeft.X && point.X <= BottomRight.X)
             {
                 inX = true;
             }
 
-            if (point.Y >= BottomLeft.Y && point.Y <= TopLeft.Y)
+            if (point.Y >= BottomRight.Y && point.Y <= TopLeft.Y)
             {
                 inY = true;
             }
