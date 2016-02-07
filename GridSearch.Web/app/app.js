@@ -4,7 +4,8 @@
     var app = angular
         .module('gridsearch', [
                 'ngRoute',
-                'gridsearch.controllers'
+                'gridsearch.controllers',
+                'gridsearch.services'
         ]);
 
     app.config(['$routeProvider',
@@ -16,7 +17,7 @@
                 .when('/nearby', {
                     templateUrl: 'search/search.partial.html',
                     controller: 'NearbyController',
-                    controllerAs: 'NearbyCtrl'
+                    controllerAs: 'nearbyCtrl'
                 })
                 .otherwise({
                     redirectTo: '/nearby'
@@ -27,5 +28,7 @@
         'use strict';
         angular
             .module('gridsearch.controllers', []);
+        angular
+            .module('gridsearch.services', ['ngResource']);
     })();
 })();

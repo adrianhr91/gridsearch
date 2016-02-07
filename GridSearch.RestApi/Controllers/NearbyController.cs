@@ -22,7 +22,7 @@ namespace GridSearch.RestApi.Controllers
             var nearbyAddresses = query.FindNearbyAddresses(address, request.Size);
             var response = new SearchResponse(nearbyAddresses);
 
-            return Request.CreateResponse(HttpStatusCode.OK, nearbyAddresses);
+            return Request.CreateResponse(HttpStatusCode.OK, response);
         }
     }
 }
