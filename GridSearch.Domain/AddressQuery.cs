@@ -18,7 +18,7 @@ namespace GridSearch.Domain
             }
         }
 
-        public List<Address> GetNearbyAddresses(Address address, int squareSize)
+        public List<Address> FindNearbyAddresses(Address address, int squareSize)
         {
             var nearbyAddresses = new List<Address>();
             var searchSquare = new Square(address.Easting, address.Northing, squareSize);
@@ -30,6 +30,8 @@ namespace GridSearch.Domain
                     .Where(a => Square.IsInside(a.Easting, a.Northing, searchSquare))
                     .ToList();
             }
+
+            nearbyAddresses.RemoveAll(a => a.Equals(address)); // exclude original address from search
 
             return nearbyAddresses;
         }

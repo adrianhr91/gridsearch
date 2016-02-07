@@ -15,7 +15,7 @@ namespace GridSearch.ConsoleTest
 
             AddressQuery query = new AddressQuery();
 
-            var addresses = query.GetNearbyAddresses(new Address() { Easting = 324423, Northing = 664988 },
+            var addresses = query.FindNearbyAddresses(new Address() { Easting = 324423, Northing = 664988 },
                 3000);
 
             foreach (var address in addresses)

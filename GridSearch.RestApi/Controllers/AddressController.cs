@@ -19,7 +19,7 @@ namespace GridSearch.RestApi.Controllers
                     "No address found matching the specified filter.");
             }
 
-            var nearbyAddresses = query.GetNearbyAddresses(address, request.Size);
+            var nearbyAddresses = query.FindNearbyAddresses(address, request.Size);
             var response = new SearchResponse(nearbyAddresses);
 
             return Request.CreateResponse(HttpStatusCode.OK, nearbyAddresses);
