@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.Tests", "GridSea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.RestApi", "GridSearch.RestApi\GridSearch.RestApi.csproj", "{36678CCF-1E8E-4140-B1A4-094A9DE09BD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.Web", "GridSearch.Web\GridSearch.Web.csproj", "{367F6C56-5FB9-4FAD-BB0F-1E2A3610879D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{36678CCF-1E8E-4140-B1A4-094A9DE09BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36678CCF-1E8E-4140-B1A4-094A9DE09BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36678CCF-1E8E-4140-B1A4-094A9DE09BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367F6C56-5FB9-4FAD-BB0F-1E2A3610879D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367F6C56-5FB9-4FAD-BB0F-1E2A3610879D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367F6C56-5FB9-4FAD-BB0F-1E2A3610879D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367F6C56-5FB9-4FAD-BB0F-1E2A3610879D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
