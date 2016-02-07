@@ -1,26 +1,15 @@
-﻿using System;
+﻿using GridSearch.Domain;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace GridSearch.RestApi.Models
 {
     public class SearchResponse
     {
-        public List<Address> Addresses { get; set; }
+        public List<Address> Addresses { get; private set; }
 
-        public SearchResponse()
+        public SearchResponse(List<Address> addresses)
         {
-            Addresses = new List<Address>();
+            Addresses = addresses ?? new List<Address>();
         }
-    }
-
-    public class Address
-    {
-        public string Thoroughfare { get; set; }
-        public string Postcode { get; set; }
-        public string Posttown { get; set; }
-        public int Easting { get; set; }
-        public int Northing { get; set; }
     }
 }
