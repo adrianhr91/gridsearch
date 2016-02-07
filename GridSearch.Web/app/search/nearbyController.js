@@ -19,7 +19,7 @@
         nearbyCtrl.errorMessage = '';
 
         nearbyCtrl.findNearby = function () {
-            nearbyCtrl.errorMessage = '';
+            nearbyCtrl.reset();
 
             NearbyApi.findNearby(
                 nearbyCtrl.thoroughfare,
@@ -35,6 +35,11 @@
 
         nearbyCtrl.hasError = function () {
             return nearbyCtrl.errorMessage.length > 0;
+        }
+
+        nearbyCtrl.reset = function () {
+            nearbyCtrl.errorMessage = '';
+            nearbyCtrl.nearbyAddresses = [];
         }
     }
 })();

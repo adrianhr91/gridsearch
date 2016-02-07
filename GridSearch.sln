@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.Domain", "GridSearch.Domain\GridSearch.Domain.csproj", "{0587447A-58EB-46A8-9EC4-4E26FEE435F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.ConsoleTest", "GridSearch.ConsoleTest\GridSearch.ConsoleTest.csproj", "{165AEA58-E713-4FCF-9440-129A4B8D9CFB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.Tests", "GridSearch.Tests\GridSearch.Tests.csproj", "{4D57F98A-E579-448B-B2B2-0C71762298A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSearch.RestApi", "GridSearch.RestApi\GridSearch.RestApi.csproj", "{36678CCF-1E8E-4140-B1A4-094A9DE09BD1}"
@@ -23,10 +21,6 @@ Global
 		{0587447A-58EB-46A8-9EC4-4E26FEE435F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0587447A-58EB-46A8-9EC4-4E26FEE435F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0587447A-58EB-46A8-9EC4-4E26FEE435F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{165AEA58-E713-4FCF-9440-129A4B8D9CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{165AEA58-E713-4FCF-9440-129A4B8D9CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{165AEA58-E713-4FCF-9440-129A4B8D9CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{165AEA58-E713-4FCF-9440-129A4B8D9CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D57F98A-E579-448B-B2B2-0C71762298A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D57F98A-E579-448B-B2B2-0C71762298A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D57F98A-E579-448B-B2B2-0C71762298A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
