@@ -1,6 +1,13 @@
 # Grid Search
 Technical test for Sigma Seven
 
+## How to run the web app
+1. Create a local database called **GridSearch**.
+2. Execute the population script so the **Postcodes** table is added to the **GridSearch** database.
+3. Depending on the version of SQL Server alterations to the Web.config in **GridSearch.Domain** and **GridSearch.RestApi** might be needed.
+4. Run the **GridSearch.Web** project (it should also run **GridSearch.RestApi** by default but if it doesn't just run it manually).
+5. The app should be configured to open by default but in case something goes wrong navigate to `http://localhost:50534/app/#/nearby` in your browser.
+
 ## Things that can be improved
 As this is a test application there are some good practices that will be an overkill for the current requirements but should be considered in real applications.
 
